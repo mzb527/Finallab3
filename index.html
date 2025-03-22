@@ -4,7 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wordly Dictionary</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      height: 100%; 
+    }
+    
+    body {
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0;
+      background-color: #add8e6; /*  blue backdrop */
+      border: 10px solid black; /* Black border around the entire page */
+      box-sizing: border-box; /* Ensures padding doesn’t extend the body beyond the border */
+      height: 100%; /* Ensures the border covers the full height */
+    }
+
+    #app {
+      max-width: 800px; /* Center the content with a max width */
+      margin: auto;
+      padding: 20px;
+      background-color: white; /* Contrast background for content */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    h1, h2 {
+      text-align: center; /* Center-align main headings */
+    }
+
+    #search-form {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #word-input {
+      padding: 8px;
+      font-size: 1rem;
+      width: 70%;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 1rem;
+      color: white;
+      background-color: #007bff; /* Blue button */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    #results, #error-message, #saved-words {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <div id="app">
